@@ -21,10 +21,13 @@
     .field {
       background-color: lightgrey;
       height: 50px;
-      margin-right: 20px;
+      margin-right: 50px;
+      font-size: 30px;
+      max-width: 250px;
     }
     .label {
       margin-right: 80px;
+      font-size: 20px;
     }
   </style>
 
@@ -32,9 +35,9 @@
 
   <div class="container-fluid">
     <div class="row" align="middle">
-      <input class="field" align="left" size="40"
+      <input class="field" align="left"
                [(ngModel)]="firstName">
-      <input class="field" align="right" size="40"
+      <input class="field" align="right"
                [(ngModel)]="lastName">
     </div>
   </div>
@@ -144,6 +147,12 @@
       <option value='1991'>1991</option>
       <option value='1992'>1992</option>
       <option value='1993'>1993</option>
+      <option value='1994'>1994</option>
+      <option value='1995'>1995</option>
+      <option value='1996'>1996</option>
+      <option value='1997'>1997</option>
+      <option value='1998'>1998</option>
+      <option value='1999'>1999</option>
     </select>
 
   </div>
