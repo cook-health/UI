@@ -29,6 +29,15 @@
       margin-right: 80px;
       font-size: 20px;
     }
+    .save {
+      align-self: center;
+      background-color: mediumpurple;
+      height: 50px;
+      width:100px;
+      font-size: large;
+      color: white;
+      padding: 10px;
+    }
   </style>
 
   <h2 class="prompt">Patient's Name</h2>
@@ -42,15 +51,20 @@
     </div>
   </div>
 
+  <br><br><br>
   <h2 class="prompt">Date of Birth</h2>
   <div class="row" align="middle">
     <span class="label" align="left">Month</span>
     <span class="label" align="middle">Day</span>
     <span class="label" align="right">Year</span>
   </div>
+
+<br>
+
   <div class="row" align="middle">
 
-    <select class="field" name='month' align = "left" ng-model="month">
+    <select class="field" name='month'
+            (change)="monthHandler($event)">
       <option value='1'>1</option>
       <option value='2'>2</option>
       <option value='3'>3</option>
@@ -65,7 +79,8 @@
       <option value='12'>12</option>
     </select>
 
-    <select class="field" name='day' align="middle" ng-model="day">
+    <select class="field" name='day'
+            (change)="dayHandler($event)">
       <option value='1'>1</option>
       <option value='2'>2</option>
       <option value='3'>3</option>
@@ -99,7 +114,8 @@
       <option value='31'>31</option>
     </select>
 
-    <select class="field" name='day' align="right" ng-model="year">
+    <select class="field" name="day"
+            (change)="yearHandler($event)">
       <option value='1947'>1947</option>
       <option value='1948'>1948</option>
       <option value='1949'>1949</option>
@@ -157,10 +173,16 @@
 
   </div>
 
+  <br><br><br>
   <h2 class="prompt">Phone Number</h2>
   <div class="row" align="middle">
     <input class="field" align="middle"
            [(ngModel)]="phone">
   </div>
+
+  <br><br>
+  <button class="save"
+          [disabled]="filled==true"
+          (click)="setupPatient()">Start</button>
 </ul>
 
