@@ -22,10 +22,11 @@
 }
 .save {
   align-self: center;
-  background-color: mediumpurple;
+  background-color: rebeccapurple;
   height: 50px;
-  width:100px;
-  font-size: large;
+  width: 150px;
+  font-size: 25px;
+  mso-font-width: 3px;
   color: white;
   padding: 10px;
 }

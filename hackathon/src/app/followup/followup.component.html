@@ -1,3 +1,49 @@
-<p>
-  followup works!
-</p>
+
+<ul>
+
+  <h2 class="prompt">Reminders</h2>
+
+  <h4 class="title">#1</h4>
+
+  <h4 class="title">Contents:</h4>
+  <div class="container-fluid">
+      <textarea class="field" align="middle"
+                [(ngModel)]="reminder1"></textarea>
+  </div>
+  <h4 class="title">Sent at time:</h4>
+  <div class="container-fluid">
+      <textarea class="field" align="middle"
+                [(ngModel)]="time1"></textarea>
+  </div>
+  <h4 class="title">Duration:</h4>
+  <div class="container-fluid">
+      <textarea class="field" align="middle"
+                [(ngModel)]="duration1"></textarea>
+  </div>
+  <br>
+  <h4 class="title">#2</h4>
+  <h4 class="title">Contents:</h4>
+  <div class="container-fluid">
+      <textarea class="field" align="middle"
+                [(ngModel)]="reminder2"></textarea>
+  </div>
+
+  <h4 class="title">Sent at time:</h4>
+  <div class="container-fluid">
+      <textarea class="field" align="middle"
+                [(ngModel)]="time2"></textarea>
+  </div>
+  <h4 class="title">Duration:</h4>
+  <div class="container-fluid">
+      <textarea class="field" align="middle"
+                [(ngModel)]="duration2"></textarea>
+  </div>
+
+  <br><br>
+  <div align="middle">
+    <button class="save"
+            [disabled]="filled==true"
+            (click)="setupPatient()">Submit</button>
+  </div>
+
+</ul>

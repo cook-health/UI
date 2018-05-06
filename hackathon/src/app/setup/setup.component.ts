@@ -12,31 +12,15 @@ import {callLifecycleHooksChildrenFirst} from "@angular/core/src/view/provider";
 export class SetupComponent{
   firstName: string = '';
   lastName: string = '';
-  day: string = '0';
-  month: string = '0';
-  year: string = "0";
   DOB: string = "";
-  phone: number = 0;
+  phone: number = null;
   filled: boolean = false;
-
 
   constructor(private router: Router) {};
 
 
-  dayHandler(event: Event) {
-    this.day = (<HTMLInputElement>event.currentTarget).value;
-  }
-
-  monthHandler(event: Event) {
-    this.month = (<HTMLInputElement>event.currentTarget).value;
-  }
-
-  yearHandler(event: Event) {
-    this.year = (<HTMLInputElement>event.currentTarget).value;
-  }
-
   setupPatient(){
-    this.DOB = this.month + "/" + this.day + "/" + this.year;
+    console.log(this.DOB);
     this.router.navigate(['/doc']);
   }
 

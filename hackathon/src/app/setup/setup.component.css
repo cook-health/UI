@@ -1,0 +1,28 @@
+.prompt {
+  background-color: rebeccapurple;
+  margin-right: 18%;
+  margin-left: 15%;
+  color: white;
+  padding: 10px;
+}
+.field {
+  background-color: lightgrey;
+  height: 50px;
+  margin-right: 50px;
+  font-size: 30px;
+  max-width: 250px;
+}
+.label {
+  margin-right: 80px;
+  font-size: 20px;
+}
+.save {
+  align-self: center;
+  background-color: rebeccapurple;
+  height: 50px;
+  width: 150px;
+  font-size: 25px;
+  mso-font-width: 3px;
+  color: white;
+  padding: 10px;
+}

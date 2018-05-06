@@ -6,7 +6,7 @@
 
 <ul>
 
-  <h2 class="prompt">Symptoms</h2>
+  <h2 class="prompt">Diagnosis</h2>
 
   <div class="container-fluid">
       <textarea class="field" align="middle"
@@ -28,9 +28,11 @@
   </div>
 
   <br><br>
-  <button class="save"
-          [disabled]="filled==true"
-          (click)="setupPatient()">Start</button>
+  <div align="middle">
+    <button class="save"
+            [disabled]="filled==true"
+            (click)="setupPatient()">Continue</button>
+  </div>
 
 </ul>
 
