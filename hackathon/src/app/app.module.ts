@@ -1,31 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { Routes } from "@angular/router";
-import { SetupPatientComponent } from './setup-patient/setup-patient.component';
-import { BasicInformationComponent } from './basic-information/basic-information.component';
+import {Router, RouterModule, Routes} from "@angular/router";
 import { DocumentationComponent } from './documentation/documentation.component';
-import { ExamsComponent } from './exams/exams.component';
 import { FormsModule} from "@angular/forms";
+import { SetupComponent } from './setup/setup.component';
 
 const routes: Routes = [
-  {path: '/', component: SetupPatientComponent },
-  {path: '/basics', component: BasicInformationComponent },
-  {path: '/doc', component: DocumentationComponent },
-  {path: '/exams', component: ExamsComponent }
+  {path: '', component: AppComponent, pathMatch:'full' },
+  {path: 'setup', component: SetupComponent},
+  {path: 'doc', component: DocumentationComponent },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    SetupPatientComponent,
-    BasicInformationComponent,
     DocumentationComponent,
-    ExamsComponent
+    SetupComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

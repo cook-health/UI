@@ -10,6 +10,7 @@ export class DocumentationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("in documentation now");
   }
 
 }

@@ -1,0 +1,9 @@
+.button {
+  background-color: rebeccapurple;
+  color: white;
+  padding: 32px;
+  alignment: center;
+  text-align: center;
+  font-size:26px;
+  align-self: center;
+}
