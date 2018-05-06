@@ -2,13 +2,14 @@
 <img style="text-align:center" xmlns:background-color="http://www.w3.org/1999/xhtml"
      xmlns:background-color="http://www.w3.org/1999/xhtml">
   <br>
-  <br>
 
 
 <ul>
   <style>
     .prompt {
       background-color: rebeccapurple;
+      margin-right: 18%;
+      margin-left: 15%;
       color: white;
       padding: 10px;
     }
@@ -36,6 +37,7 @@
 
   <h2 class="prompt">Patient's Name</h2>
 
+  <br>
   <div class="container-fluid">
     <div class="row" align="middle">
       <input class="field" align="left"
@@ -45,8 +47,9 @@
     </div>
   </div>
 
-  <br><br><br>
+  <br><br>
   <h2 class="prompt">Date of Birth</h2>
+  <br>
   <div class="row" align="middle">
     <span class="label" align="left">Month</span>
     <span class="label" align="middle">Day</span>
@@ -167,17 +170,20 @@
 
   </div>
 
-  <br><br><br>
+  <br>
   <h2 class="prompt">Phone Number</h2>
+  <br>
   <div class="row" align="middle">
     <input class="field" align="middle"
            [(ngModel)]="phone">
   </div>
 
   <br><br>
-  <button class="save"
-          [disabled]="filled==true"
-          (click)="setupPatient()">Enter</button>
+  <div align="center">
+    <button class="save"
+            [disabled]="filled==true"
+            (click)="setupPatient()">Enter</button>
+  </div>
 
 </ul>
 

@@ -1,3 +1,4 @@
+
 .button {
   background-color: rebeccapurple;
   color: white;
@@ -10,25 +11,31 @@
 
 .topnav {
   background-color: rebeccapurple;
+  alignment: center;
   overflow: hidden;
+  margin-left: 17%;
+  margin-right: 17%;
+
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  margin-left: 150px;
+  margin-left: 19%;
   float: left;
   display: block;
-  color: mediumpurple;
+  color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
+  padding: 10px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
+  padding: 10px;
   color: black;
+  font-size: 25px;
 }
 
 /* Add an active class to highlight the current page */
@@ -40,4 +47,29 @@
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+}
+
+h1 {
+  width: 70%;
+  margin: .7em auto;
+  overflow: hidden;
+  text-align: center;
+  font-size: 20px;
+  color: yellowgreen;
+}
+h1:before, h1:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+  color: rebeccapurple;
+}
+h1:after {
+  margin: 0 -55% 0 .5em;
+}
+span {
+  display: inline-block;
+  vertical-align: middle;
 }

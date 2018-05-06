@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocumentationComponent implements OnInit {
 
+  symptoms: string = "";
+  diagnosis: string = "";
+  treatment: string = "";
   constructor() { }
 
   ngOnInit() {
