@@ -4,26 +4,24 @@
 
 <br>
 <br>
-<br>
-<br>
-<br>
 
-<router-outlet></router-outlet>
-<!--
-<div align="middle">
-  <h1>
-    Welcome to the Medical Portal!
-  </h1>
-  <h2>
-    Powered by
-  </h2>
-  <img src="../assets/Athenahealth.jpg"
-       width="300" alt="Athena Logo">
+<div class="container" style="background-color: mediumpurple">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a routerLink="/setup">Set up</a> </li>
+        <li role="presentation"><a routerLink="/doc">Documentation</a> </li>
+        <!--li role="presentation"><a routerLink="/followup">Follow-ups</a> </li-->
+      </ul>
+    </div>
+  </div>
 </div>
+
 <br>
-<br>  -->
-<button class="button"
-        style="position: center"
-        (click)="start()">Start</button>
+<br>
+<br>
+<body style="background-color: rebeccapurple">
+  <router-outlet></router-outlet>
+</body>
 
 

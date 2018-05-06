@@ -7,7 +7,6 @@ import { FormsModule} from "@angular/forms";
 import { SetupComponent } from './setup/setup.component';
 
 const routes: Routes = [
-  {path: '', component: AppComponent, pathMatch:'full' },
   {path: 'setup', component: SetupComponent},
   {path: 'doc', component: DocumentationComponent },
 ];
