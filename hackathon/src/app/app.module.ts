@@ -5,10 +5,12 @@ import {Router, RouterModule, Routes} from "@angular/router";
 import { DocumentationComponent } from './documentation/documentation.component';
 import { FormsModule} from "@angular/forms";
 import { SetupComponent } from './setup/setup.component';
+import { FollowupComponent } from './followup/followup.component';
 
 const routes: Routes = [
   {path: 'setup', component: SetupComponent},
   {path: 'doc', component: DocumentationComponent },
+  {path: 'followup', component: FollowupComponent },
 ];
 
 @NgModule({
@@ -16,6 +18,7 @@ const routes: Routes = [
     AppComponent,
     DocumentationComponent,
     SetupComponent,
+    FollowupComponent,
   ],
   imports: [
     BrowserModule,
