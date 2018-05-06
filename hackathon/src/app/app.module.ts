@@ -7,6 +7,7 @@ import { FormsModule} from "@angular/forms";
 import { SetupComponent } from './setup/setup.component';
 import { FollowupComponent } from './followup/followup.component';
 import { ReviewComponent } from './review/review.component';
+import {HttpClientModule} from '@angular/common/http';
 
 const routes: Routes = [
   {path: 'setup', component: SetupComponent},
@@ -26,6 +27,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

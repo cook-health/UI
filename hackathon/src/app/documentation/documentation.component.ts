@@ -13,15 +13,13 @@ export class DocumentationComponent implements OnInit {
   symptoms: string = "";
   diagnosis: string = "";
   treatment: string = "";
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.id = this.route.snapshot.params['id'];
     this.phone = this.route.snapshot.params['phone'];
     console.log("in documentation now");
   }
-
-  constructor(private router: Router){};
 
   saveDoc(){
     this.router.navigate(['/followup/',this.id, this.phone]);
