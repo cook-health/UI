@@ -6,11 +6,13 @@ import { DocumentationComponent } from './documentation/documentation.component'
 import { FormsModule} from "@angular/forms";
 import { SetupComponent } from './setup/setup.component';
 import { FollowupComponent } from './followup/followup.component';
+import { ReviewComponent } from './review/review.component';
 
 const routes: Routes = [
   {path: 'setup', component: SetupComponent},
-  {path: 'doc', component: DocumentationComponent },
-  {path: 'followup', component: FollowupComponent },
+  {path: 'doc/:id/:phone', component: DocumentationComponent },
+  {path: 'followup/:id/:phone', component: FollowupComponent },
+  {path: 'review/:id/:phone', component: ReviewComponent },
 ];
 
 @NgModule({
@@ -19,6 +21,7 @@ const routes: Routes = [
     DocumentationComponent,
     SetupComponent,
     FollowupComponent,
+    ReviewComponent,
   ],
   imports: [
     BrowserModule,

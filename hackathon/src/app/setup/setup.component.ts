@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Routes, RouterModule, Router} from "@angular/router";
+import {Routes, RouterModule, Router, ActivatedRoute} from "@angular/router";
 import {callLifecycleHooksChildrenFirst} from "@angular/core/src/view/provider";
 
 @Component({
@@ -15,13 +15,15 @@ export class SetupComponent{
   DOB: string = "";
   phone: number = null;
   filled: boolean = false;
+  id: number = 1;
 
-  constructor(private router: Router) {};
+  constructor(private router: Router,
+                      route: ActivatedRoute) {};
 
 
   setupPatient(){
     console.log(this.DOB);
-    this.router.navigate(['/doc']);
+    this.router.navigate(['/doc/',this.id, this.phone]);
   }
 
 }

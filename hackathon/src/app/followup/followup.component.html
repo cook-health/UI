@@ -43,7 +43,12 @@
   <div align="middle">
     <button class="save"
             [disabled]="filled==true"
-            (click)="setupPatient()">Submit</button>
+            style="margin-right: 150px"
+            (click)="submit()">Back</button>
+
+    <button class="save"
+            [disabled]="filled==true"
+            (click)="back()">Submit</button>
   </div>
 
 </ul>
