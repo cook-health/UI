@@ -5,22 +5,29 @@
 <br>
 <br>
 
-<div class="container" style="background-color: mediumpurple">
-  <div class="row">
-    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1">
+<div align="middle">
+  <img src="../assets/Athenahealth.jpg"
+       width="400" alt="Athena Logo">
+  <div class="container" style="background-color: mediumpurple">
+    <div class="row">
       <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a routerLink="/setup">Set up</a> </li>
-        <li role="presentation"><a routerLink="/doc">Documentation</a> </li>
-        <!--li role="presentation"><a routerLink="/followup">Follow-ups</a> </li-->
-      </ul>
+          <div class="col-xs-12">
+          <li role="presentation" class="active"><a routerLink="/setup">Set up</a> </li>
+          </div>
+          <div class="col-xs-12">
+            <li role="presentation"><a routerLink="/doc">Documentation</a> </li>
+          </div>
+            <!--li role="presentation"><a routerLink="/followup">Follow-ups</a> </li-->
+        </ul>
+      </div>
     </div>
   </div>
-</div>
+
 
 <br>
 <br>
 <br>
-<body style="background-color: rebeccapurple">
+<body>
   <router-outlet></router-outlet>
 </body>
 
